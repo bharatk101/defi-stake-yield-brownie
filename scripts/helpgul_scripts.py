@@ -3,8 +3,8 @@ from brownie import (
     accounts,
     config,
     MockV3Aggregator,
-    VRFCoordinatorMock,
     LinkToken,
+    VRFCoordinatorMock,
     Contract,
     MockDAI,
     MockWETH
@@ -93,7 +93,7 @@ def fund_with_link(
     return tx
 
 
-def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_PRICE_FEED_VALUE):
+def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_VALUE):
     """
     Use this script if you want to deploy mocks to a testnet
     """
